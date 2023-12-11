@@ -1,0 +1,26 @@
+<div class="card">
+  <div class="card-body">
+    <img
+      [class]="character.image ? 'card-img' : 'no-profile-img'"
+      [src]="
+        character.image ? character.image : '/assets/images/no-profile.png'
+      "
+      alt="character image"
+    />
+    <p class="card-title">{{ character.name }}</p>
+    <p class="card-text">
+      Nasc.:
+      {{ character.dateOfBirth ? character.dateOfBirth : "Desconhecido" }}
+    </p>
+    <div class="card-house">
+      <p class="card-text">
+        {{ character.house ? character.house : "Sem casa" }}
+      </p>
+      <img
+        class="card-house-img"
+        *ngIf="character.house"
+        [src]="'/assets/images/' + character.house.toLocaleLowerCase() + '.png'"
+      />
+    </div>
+  </div>
+</div>

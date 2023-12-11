@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  row-gap: 2rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: harrypotter;
+  border: 2px solid white;
+  padding: 30px;
+
+  @media (min-width: 768px) {
+    font-size: 4rem;
+  }
+
+  @media (min-width: 1200px) {
+    font-size: 5rem;
+  }
+}
+
+.border-title {
+  padding: 3px;
+  border: 2px solid white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1200px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
