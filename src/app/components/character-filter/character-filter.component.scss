@@ -1,0 +1,17 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  column-gap: 20px;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.filter-field {
+  width: 80%;
+  max-width: 400px;
+}

@@ -26,6 +26,14 @@ export class CharactersService {
       );
   }
 
+  setCharacters(characters: Character[]) {
+    this.characters.next(characters);
+  }
+
+  getCharacters() {
+    return this.characters.asObservable();
+  }
+
   setFilteredCharacters(characters: Character[]) {
     this.filteredCharacters.next(characters);
   }

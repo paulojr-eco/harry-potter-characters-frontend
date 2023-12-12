@@ -1,0 +1,16 @@
+<form class="filter-container">
+  <mat-form-field class="filter-field">
+    <mat-label>Nome</mat-label>
+    <input #nameInput matInput type="text" (keyup)="applyFilters(nameInput.value, storeSelect.value)">
+  </mat-form-field>
+  <mat-form-field class="filter-field">
+    <mat-label>Casa</mat-label>
+    <mat-select #storeSelect (valueChange)="applyFilters(nameInput.value, storeSelect.value)">
+      @for (house of houses; track house) {
+      <mat-option [value]="house">{{
+        house
+      }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+</form>

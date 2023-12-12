@@ -10,7 +10,7 @@ $harry-potter-characters-web-accent: mat.define-palette(
 );
 
 $harry-potter-characters-web-warn: mat.define-palette(mat.$red-palette);
-$harry-potter-characters-web-theme: mat.define-light-theme(
+$harry-potter-characters-web-theme: mat.define-dark-theme(
   (
     color: (
       primary: $harry-potter-characters-web-primary,
@@ -35,6 +35,7 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
 }
 
 .overlay {
