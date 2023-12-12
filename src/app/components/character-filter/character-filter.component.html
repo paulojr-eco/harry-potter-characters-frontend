@@ -1,14 +1,24 @@
 <form class="filter-container">
   <mat-form-field class="filter-field">
     <mat-label>Nome</mat-label>
-    <input #nameInput matInput type="text" (keyup)="applyFilters(nameInput.value, storeSelect.value)">
+    <input #nameInput matInput type="text" (keyup)="applyFilters(nameInput.value, houseSelect.value, ageSelect.value)">
   </mat-form-field>
   <mat-form-field class="filter-field">
     <mat-label>Casa</mat-label>
-    <mat-select #storeSelect (valueChange)="applyFilters(nameInput.value, storeSelect.value)">
+    <mat-select #houseSelect (valueChange)="applyFilters(nameInput.value, houseSelect.value, ageSelect.value)">
       @for (house of houses; track house) {
       <mat-option [value]="house">{{
         house
+      }}</mat-option>
+      }
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field class="filter-field">
+    <mat-label>Idade</mat-label>
+    <mat-select #ageSelect (valueChange)="applyFilters(nameInput.value, houseSelect.value, ageSelect.value)">
+      @for (ageOrder of ageOrders; track ageOrder) {
+      <mat-option [value]="ageOrder">{{
+        ageOrder
       }}</mat-option>
       }
     </mat-select>

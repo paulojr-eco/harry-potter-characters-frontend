@@ -7,15 +7,25 @@
       "
       alt="character image"
     />
-    <p class="card-title">{{ character.name }}</p>
-    <p class="card-text">
-      Nasc.:
-      {{ character.dateOfBirth ? character.dateOfBirth : "Desconhecido" }}
-    </p>
+    <span class="card-title">{{ character.name }}</span>
+    <div class="card-age-info">
+      <span class="card-text">
+        Nascimento:
+        {{ character.dateOfBirth ? character.dateOfBirth : "Desconhecido" }}
+      </span>
+      <span class="card-text">
+        Idade:
+        {{
+          character.dateOfBirth
+            ? calculateAge(character.dateOfBirth) + " anos"
+            : "Desconhecida"
+        }}
+      </span>
+    </div>
     <div class="card-house">
-      <p class="card-text">
+      <span class="card-text">
         {{ character.house ? character.house : "Sem casa" }}
-      </p>
+      </span>
       <img
         class="card-house-img"
         *ngIf="character.house"

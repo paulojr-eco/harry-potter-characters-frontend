@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 80vw;
   column-gap: 20px;
 
   @media (min-width: 768px) {
@@ -12,6 +12,10 @@
 }
 
 .filter-field {
-  width: 80%;
+  width: 100%;
   max-width: 400px;
+
+  @media (min-width: 768px) {
+    max-width: 300px;
+  }
 }
