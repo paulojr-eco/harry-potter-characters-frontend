@@ -1,27 +1,53 @@
-# HarryPotterCharactersWeb
+# Harry Potter Characters Frontend
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.5.
+<div align="center">
+  <img width="150px" src="src/assets/docs/logo.png">
+</div>
 
-## Development server
+<p align="center">
+  <a href="#star-features">Features</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#keyboard-tecnologias">Tecnologias</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="#computer_mouse-instalação">Instalação</a>
+</p>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+# :star: Features
 
-## Code scaffolding
+Essa aplicação consiste na interface de usuário para exibição de uma lista de personagens de Harry Potter. As informações consumidas são provenientes do <a href="https://github.com/paulojr-eco/harry-potter-characters-backend" target="_blank"> projeto back-end </a>.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<div align="center">
 
-## Build
+  Página de Exibição de Produtos:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  <img width="800px" src="src/assets/docs/list-view.png"/>
 
-## Running unit tests
+</div>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# :keyboard: Tecnologias
 
-## Running end-to-end tests
+As tecnologias utilizadas no projeto foram:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+<div>
 
-## Further help
+- <img align="left" alt="NodeJs" width="30px" style="padding-right:10px;" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" /> Angular
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- <img align="left" alt="NodeJs" width="30px" style="padding-right:10px;" src="https://material.angular.io/assets/img/angular-material-logo.svg" /> Angular Material
+
+<div>
+
+# :computer_mouse: Instalação
+
+Primeiro é preciso ter o Angular CLI instalado em sua máquina, bem como o node e npm. Após isso, certifique-se de o backend está rodando e siga os passos:
+
+```bash
+# Clonar o repositório
+git clone https://github.com/paulojr-eco/product-management-system-frontend.git
+
+# Acessar o diretório
+cd harry-potter-characters-frontend
+
+# Instalar as dependências
+npm install
+
+#Executar a aplicação
+ng serve
+```
