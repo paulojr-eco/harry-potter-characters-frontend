@@ -12,11 +12,11 @@
 
 # :star: Features
 
-Essa aplicação consiste na interface de usuário para exibição de uma lista de personagens de Harry Potter. As informações consumidas são provenientes do <a href="https://github.com/paulojr-eco/harry-potter-characters-backend" target="_blank"> projeto back-end </a>.
+Essa aplicação consiste na interface de usuário para exibição de uma lista de personagens de Harry Potter, bem como para realização da filtragem desses elementos. As informações consumidas são provenientes do <a href="https://github.com/paulojr-eco/harry-potter-characters-backend" target="_blank"> projeto back-end </a>.
 
 <div align="center">
 
-  Página de Exibição de Produtos:
+  Página de Exibição de Personagens:
 
   <img width="800px" src="src/assets/docs/list-view.png"/>
 
@@ -40,7 +40,7 @@ Primeiro é preciso ter o Angular CLI instalado em sua máquina, bem como o node
 
 ```bash
 # Clonar o repositório
-git clone https://github.com/paulojr-eco/product-management-system-frontend.git
+git clone https://github.com/paulojr-eco/harry-potter-characters-frontend.git
 
 # Acessar o diretório
 cd harry-potter-characters-frontend
